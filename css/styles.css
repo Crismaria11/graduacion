@@ -1671,6 +1671,10 @@ a:hover.back-to-top {
 		text-align: center;
 	}
 
+	.name, .artist {
+		text-align: left;
+	}
+
 	.divAsis {
 		margin: 8em 0;
 	}
