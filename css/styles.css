@@ -1113,66 +1113,70 @@ a:hover.back-to-top {
 /* end of min-width 1200px */
 
 /* Button Waze */
-.button {
-	display: inline-block;
-	border-radius: 7px;
+.btn {
+	width: 160px;
+	height: 50px;
+	background: linear-gradient(to top, #89122a, #b71f3d, #ec3258);
+	color: #fff;
+	border-radius: 10px;
 	border: none;
-	background: #1875FF;
-	color: white;
-	font-family: inherit;
-	text-align: center;
-	font-size: 13px;
-	box-shadow: 0px 14px 56px -11px #1875FF;
-	width: 10em;
-	padding: 1em;
-	transition: all 0.4s;
+	outline: none;
 	cursor: pointer;
-   }
-   
-   .button span {
-	cursor: pointer;
-	display: inline-block;
 	position: relative;
-	transition: 0.4s;
-   }
-   
-   .button span:after {
-	content: 'for free';
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+  }
+  
+  .btn span {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: top 0.5s;
+  }
+  
+  .btn-text-one {
 	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.7s;
-   }
-   
-   .button:hover span {
-	padding-right: 3.55em;
-   }
-   
-   .button:hover span:after {
-	opacity: 4;
-	right: 0;
-   }
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+	position: absolute;
+	width: 100%;
+	top: 150%;
+	left: 0;
+	transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+	top: -100%;
+	color: #fff;
+  }
+  
+  .btn:hover .btn-text-two {
+	top: 50%;
+	color: #fff;
+  }
+  
 
 
-   /* Spotify Animation */
-   .contSpo{
-	/* background-color: #1875FF; */
+/* Spotify Animation */
+.contSpo{
 	height: 100%;;
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
 
-   }
+}
 
-   .main {
+.main {
 	width: 100%;
 	background-color: white;
 	padding: 1em;
 	padding-bottom: 1.1em;
 	border-radius: 15px;
 	margin: 1em;
-	/* margin-top: 4em; */
 	box-shadow: 0px 202px 81px rgba(0, 0, 0, 0.01), 0px 114px 68px rgba(0, 0, 0, 0.05), 0px 50px 50px rgba(0, 0, 0, 0.09), 0px 13px 28px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
   
@@ -1532,7 +1536,7 @@ a:hover.back-to-top {
 	letter-spacing: 2px;
   }
   
-  .name {
+  /* .name {
 	width: 100%;
 	text-align: center;
 	padding: 0 0 3rem;
@@ -1541,7 +1545,7 @@ a:hover.back-to-top {
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  }
+  } */
   
   .button-parrot .parrot {
 	position: absolute;
@@ -1603,7 +1607,7 @@ a:hover.back-to-top {
 	animation-duration: 1.2s;
   }
   
-  .button-parrot button:hover .parrot:before {
+  .button-parrot .confAsistencia:hover .parrot:before {
 	content: "Do it!";
 	width: 70px;
   }
