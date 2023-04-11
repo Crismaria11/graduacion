@@ -563,7 +563,7 @@ input[type='checkbox'] {
 	position: relative;
 	padding-top: 7rem;
 	padding-bottom: 9rem;
-	background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url("../images/header-background.jpg") center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url("../images/hback.jpg") center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -807,6 +807,7 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1254,6 +1255,18 @@ a:hover.back-to-top {
 	margin-top: 0.7em;
 	justify-self: center;
   }
+
+  .ac1 {
+	background: url('../images/bb.jpeg');
+  }
+
+  .ac2 {
+	background: url('../images/cc.jpeg');
+  }
+
+  .ac3 {
+	background: url('../images/ma.jpeg');
+  }
   
   .albumcover {
 	position: relative;
@@ -1261,9 +1274,14 @@ a:hover.back-to-top {
 	height: 40px;
 	width: 40px;
 	background-color: rgb(233, 232, 232);
+	background-repeat: no-repeat;
+  	background-attachment: fixed; 
+  	background-size: cover;
 	align-self: center;
 	border-radius: 5px;
+	transform: rotate(180deg);
   }
+
   
   .song {
 	position: relative;
@@ -1308,9 +1326,10 @@ a:hover.back-to-top {
   /* Button recomendar musica */
   .btnMusic {
 	position: relative;
-	padding: 0;
-	width: 135px;
-	height: 65px;
+	/* padding: 0; */
+	/* width: 135px;
+	height: 65px; */
+	padding: 20px 0px 25px 25px;
 	background: transparent;
 	font-size: 17px;
 	border: 1px solid #ffffff1c;
@@ -1627,3 +1646,26 @@ a:hover.back-to-top {
 	color: #ffffff;
 	margin-bottom: 1em;
   }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 767px) {
+	body {
+		text-align: center;
+	}
+
+	.divAsis {
+		margin: 8em 0;
+	}
+
+	.recMusic {
+		padding-bottom: 5em;
+	}
+
+}
